@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			div.jumbotron{
+				background:url(img/bg.png) no-repeat;
+				background-size:100%;
+				height:445px;
+				position:relative;
+			}
+			div.jumbotron h1{
+				display:none;
+			}
+			div .jumbotron .banner{
+				margin:0;
+				position:absolute;
+				bottom:5px;
+				left:80px;
+			}
+			div .jumbotron .btn{
+				position:absolute;
+				right:150px;
+				bottom:5px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="container">
+			<!--第一部分-->
+			<div class="jumbotron"> <!--巨幕效果-->
+				<h1>联想控股</h1>
+				<p class="banner">
+					<img src="img/bg2.png"/>
+				</p>
+				<p>
+					<a href="#" class="btn btn-primary"> 更多&raquo;</a>
+				</p>
+			</div>
+			<!--第二部分-->
+			<div class="row">	 
+				<!--bootstrap不需要浮动，只需要在父元素上添加row类，子元素放入一行-->
+				
+				<div class="col-md-4">	<!--第二部分的第一个字块 -->
+					<h2>公司专题</h2>
+					<p>2013年12月2日，联想之星创业大讲堂在常州举行，柳传志就“创业一把手的成长”、“创业团队的建设”与创业者进行分享。</p>
+					<p>
+						<a href="#" class="btn btn-primary">了解更多&raquo;</a>
+					</p>
+				</div>
+				<div class="col-md-4">	<!--第二部分的第二个字块 -->
+					<h2>特别关注</h2>
+					<p>从靠“卖电脑”起家，到旗下集IT、房地产、消费与现代服务、化工新材料、现代农业五大核心资产运营于一体。</p>
+					<p>
+						<a href="#" class="btn btn-primary">了解更多&raquo;</a>
+					</p>
+				</div>
+				
+				<div class="col-md-4">	<!--第二部分的第三个字块 -->
+					<h2>我们的历史</h2>
+					<p><img src="img/bg1.png"/></p>
+					<p>
+						<a href="#" class="btn btn-primary">了解更多&raquo;</a>
+					</p>
+				</div>
+				
+			</div>
+			<hr />
+			<!--第三部分-->
+			<footer>
+				<p>
+					&copy; Company 2014
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

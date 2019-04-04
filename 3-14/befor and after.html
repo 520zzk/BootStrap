@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+    .sh::after{
+        content:"》";
+    }
+    .sh::before{
+        content:"《";
+    }
+    #zzk a::after{
+        content:'【' + attr(href) + '】';
+    }
+    </style>
+</head>
+<body>
+    <div id="zzk">
+        <a href="https://www.baidu.com">百度的网址</a>
+        <p class="sh">JavaScript</p>
+        <div class="sh">
+        Vue从入门到精通
+        </div>
+    </div>
+</body>
+</html>

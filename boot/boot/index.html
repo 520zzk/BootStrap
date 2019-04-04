@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			@media only screen and (max-width:320px) {
+				/*下面写320px设备下的样式*/
+				div{
+					background-color:pink;
+				}
+			}
+			@media only screen and (max-width:640px)and (min-width:321px )  {
+				div{
+					background-color:red;
+				}
+			}
+			@media only screen and (min-width:641px ) and (max-width:1002px) {
+				div{
+					background-color:yellow;
+				}
+			}
+			@media only screen and (min-width:1003px ) {
+				div{
+					background-color:black;
+					color:#fff;
+				}
+			}
+		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<div id="">
+			<!--lorem是产生模拟数据的方法-->
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit molestias rerum aliquid laboriosam hic sed mollitia quis odio saepe iure. Reiciendis debitis corporis velit cumque laborum numquam pariatur fugiat impedit.
+		</div>
+	</body>
+</html>

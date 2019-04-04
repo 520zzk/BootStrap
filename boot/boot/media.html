@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="normalize.css"/>
+		<style type="text/css">
+			.leftBox,.rightBox{	background:pink;}
+			.conBox{background:wheat;}
+			div.content{margin:0 auto}
+			div{
+				height:500px;
+			}
+			@media only screen and (min-width: 1024px) {
+			div.content{
+				width:90%;
+
+				border:1px solid #000000;
+			}
+			.leftBox,.rightBox{
+				float:left;
+				width:24%;
+			
+				
+			}
+			.leftBox{
+				margin-right:1%;
+			}
+			.rightBox{
+				margin-left:1%;
+			}
+			.conBox{
+				float:left;
+				width:50%;
+				
+			}
+			}
+			@media only screen and (min-width:768px) and (max-width:1023px){
+				div.content{
+					width:100%;
+				}
+				.rightBox{
+					width:0;
+					display:none;
+				}
+				.leftBox{
+					width:34%;
+					margin-right:1%;
+				}
+				.conBox{
+					width:65%;
+				}
+				
+			}
+		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<div id="" class="content">
+			
+			<div id="" class="leftBox">
+				左侧内容
+			</div>
+			<div class="conBox">
+				中间内容
+			</div>
+			<div class="rightBox">
+				右边内容
+			</div>
+		</div>
+	</body>
+</html>
