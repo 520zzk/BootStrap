@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />		
+		<style type="text/css">
+			.col-md-3,.col-md-4,.col-md-12,.col-md-9{
+				border:1px solid #000;
+			}
+			header .col-md-3,header .col-md-9{
+				height:120px;
+				background: pink;
+			}
+			nav .col-md-12{
+				height:31px;
+				background: #204D74;
+				opacity:0.6;
+				color:#fff;
+			}
+			article div {
+				height:300px; 
+			}
+			article .row div:nth-child(1){
+				background: papayawhip;
+			}
+			article .row div:nth-child{
+				background:springgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<header>
+					<div class="col-md-3">网站logo</div>
+					<div class="col-md-9">网站Banner</div>
+				</header>
+				<nav>
+					<div class="col-md-12">
+						网站导航
+					</div>
+				</nav>
+			</div>
+				
+			<div class="row">
+				<article>
+					<div class="col-md-4">
+						左侧新闻
+					</div>
+					<div class="col-md-4">
+						中间新闻
+					</div>
+					<div class="col-md-4">
+						<ul>
+							<li>右侧新闻一</li>
+							<li>右侧新闻二</li>
+							<li>右侧新闻三</li>
+							<li>右侧新闻四</li>
+							<li>右侧新闻五</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>
