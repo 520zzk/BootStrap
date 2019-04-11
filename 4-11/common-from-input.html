@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+		.checkbox{
+			border:1px solid red
+		}
+		.radio{
+			border:1px solid red
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container" >
+			<div class="row">
+				<div class="col-md-6">
+					<h2>单选框和多选框</h2>
+					<label for="favor" class="checkbox"><input type="checkbox" name="" id="favor" value="ppq" />乒乓球</label>
+					<label for="ymq" class="checkbox"><input type="checkbox" name="" id="ymq" value="ymq" />羽毛球</label>
+					<label for="zq" class="checkbox"><input type="checkbox" name="" id="zq" value="zq" />足球</label>
+				</div>
+				<div class="col-md-6">
+					<label for="z1" class="checkbox-inline"><input type="checkbox" name="" id="z1" value="ppq" />乒乓球</label>
+					<label for="z2" class="checkbox-inline"><input type="checkbox" name="" id="z2" value="ymq" />羽毛球</label>
+					<label for="z3" class="checkbox-inline"><input type="checkbox" name="" id="z3" value="zq" />足球</label>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<label for="k1" class="radio"><input type="radio" name="one" id="k1" value="" />选我好看</label>
+					<label for="k2" class="radio"><input type="radio" name="one" id="k2" value="" />好看选我</label>
+					<label for="k3" class="radio"><input type="radio" name="one" id="k3" value="" />我选好看</label>
+				</div>
+				<div class="col-md-6">
+					<label for="k4" class="radio-inline"><input type="radio" name="one" id="k4" value="" />选我好看</label>
+					<label for="k5" class="radio-inline"><input type="radio" name="one" id="k5" value="" />好看选我</label>
+					<label for="k6" class="radio-inline"><input type="radio" name="one" id="k6" value="" />我选好看</label>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<h2>下拉框</h2>
+					<p>您来自哪个城市</p>
+				</div>
+				<div class="col-md-6">
+					<select name="">
+						<optgroup label="湖北">
+							<option value="">宜昌</option>
+							<option value="">武汉</option>
+							<option value="">荆州</option>
+						</optgroup>
+						<optgroup label="湖南">
+							<option value="">衡阳</option>
+							<option value="">岳阳</option>
+							<option value="">浏阳</option>
+						</optgroup>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					
+					<h2>form-horizontal</h2>
+					<h3>用户登录</h3>
+					<form action="" method="post" class="form-horizontal">
+						<div class="form-group col-sm-10">
+							姓  名:<input type="text"  value="" class="form-control"/>
+							密  码:<input type="password"  value="" class="form-control"/>
+						</div>
+						<div class="form-group col-sm-4">
+						验证码:<input type="text"  value="" class="form-control"/>
+						</div>
+						<div class="form-group col-sm-12">
+						记住我的登录信息:<input type="checkbox"  value="" />
+						</div>
+						<div class="form-group col-sm-12">
+						<button type="submit" class="btn btn-primary">登录</button>
+						<a href="javascript:;">注册</a>
+						</div>
+					</form>
+					
+				</div>
+				<div class="col-md-6">
+					
+					<h2>form-control</h2>
+					<h3>用户登录</h3>
+					<form action="" method="post">
+						<div class="form-group">
+							姓  名:<input type="text"  value="" class="form-control"/>
+							密  码:<input type="password"  value="" class="form-control"/>
+						</div>
+						<div class="form-group">
+						验证码:<input type="text"  value="" class="form-control"/>
+						</div>
+						<div class="form-group">
+						记住我的登录信息:<input type="checkbox"  value="" />
+						</div>
+						<div class="form-group">
+						<button type="submit" class="btn btn-primary">登录</button>
+						<a href="javascript:;">注册</a>
+						</div>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

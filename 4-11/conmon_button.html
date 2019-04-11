@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			.row img{
+				width:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>可以用来制作按钮的标签有哪些？</h2>
+					<ul>
+						<li>链接可以做按钮</li>
+						<li>button可以做按钮</li>
+						<li>input可以做按钮</li>
+					</ul>
+				</div>
+				
+				<div class="col-md-6">
+					<h2>链接做按钮</h2>
+					<a href="http://www.baidu.com" class="btn btn-danger" target="_blank">百度</a>
+					<h2>button 做按钮</h2>
+					<button class="btn btn-success">success</button>
+					<button class="btn btn-info">info</button>
+					<button class="btn btn-primary">primary</button>
+					<button class="btn btn-danger">danger</button>
+					<button class="btn btn-defaule">defaule</button>
+					<button class="btn btn-warning">warning</button>
+					<button class="btn btn-link">link</button>
+					<button >默认</button>
+					
+					<h2>input做按钮</h2>
+					<input type="button" value="登录" class="btn btn-default" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<h2>按钮大小 btn-lg 无 btn-sm、btn-xs、btn-block</h2>
+					<button class="btn btn-info btn-lg">大号按钮</button>
+					<button class="btn btn-info">普通按钮</button>
+					<button class="btn btn-info btn-sm">小号按钮</button>
+					<button class="btn btn-info btn-xs">超小号按钮</button>
+					
+					<button class="btn btn-primary btn-block">登录微博</button>
+				</div>
+				<div class="col-md-6">
+					<h2>状态风格</h2>
+						<button class="btn btn-info" disabled>属性disabled</button>
+						<button class="btn btn-info  disabled">disabled</button>
+						<button class="btn btn-info  active">active</button>
+						<button class="btn btn-info  focus">focus</button>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<img src="./img/下载.jpg" alt="" />
+					<h3>正常效果</h3>
+				</div>
+				<div class="col-md-4">
+					<img src="./img/下载.jpg" alt="" class="img-rounded"/>
+					<h3>圆角效果</h3>
+				</div>
+				<div class="col-md-4">
+					<img src="./img/下载.jpg" alt="" class="img-circle"/>
+					<h3>圆形效果</h3>
+				</div>
+				<div class="col-md-4">
+					<img src="./img/下载.jpg" alt=""  class="img-thumbnail"/>
+					<h3>缩略效果</h3>
+				</div>
+	
+			</div>
+		</div>
+	</body>
+</html>
