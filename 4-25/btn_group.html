@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/jquery-3.4.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+	</head>
+	<!--1.建立触发器：一般是按钮
+	2.建立下拉菜单：一般是列表
+	3.交互：引入jquery，bootstrap
+	4.	data-toggle="dropdown"  class="dropdown-menu"  
+	-->
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="btn-group">
+						<p class="btn btn-default">按钮（p）</p>
+						<li class="btn btn-info"> 按钮(li)</li>
+						<a href="" class="btn btn-danger">按钮（a）</a>
+						<span class="btn btn-primary">按钮（span）</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<h1>按钮导航条</h1>
+				<p>多个按钮组合，形成按钮工具条</p>
+				<div class="btn-toolbar text-center">
+					<div class="btn-group">
+					<i class="btn btn-default glyphicon glyphicon-fast-backward"></i>
+					<i class="btn btn-default glyphicon glyphicon-backward"></i>
+				</div>
+				<div class="btn-group">
+					<i class="btn btn-default">1</i>
+					<i class="btn btn-default">2</i>
+					<i class="btn btn-default">...</i>
+					<i class="btn btn-default">4</i>
+					<i class="btn btn-default">5</i>
+				</div>
+				<div class="btn-group">
+					<i class="btn btn-default glyphicon glyphicon-forward"></i>
+					<i class="btn btn-default glyphicon glyphicon-fast-forward"></i>
+				</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<h2>垂直布局</h2>
+				<div class="btn-group-vertical">
+					<button class="btn btn-info">按钮1</button>
+					<button class="btn btn-info">按钮2</button>
+					<button class="btn btn-info">按钮3</button>
+					<button class="btn btn-info">按钮4</button>
+				</div>
+			</div>
+			<div class="row">
+				<h2>嵌套按钮组</h2>
+				<div class="btn-group">
+					<button class="btn btn-default">1</button>
+					<button class="btn btn-default">2</button>
+					<div class="btn-group">
+						<!--btn-group可以做到和dropdown相同的作用-->
+						<button class="btn btn-default" data-toggle="dropdown">嵌套按钮1 <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="javascript:;" class="btn btn-info">3</a>
+							</li>
+							<li>
+								<a href="javascript:;" class="btn btn-info">4</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+					<h2>两端对齐</h2>
+				<div class="btn-group btn-group-justified">
+						<p class="btn btn-default">按钮（p）</p>
+						<li class="btn btn-info"> 按钮(li)</li>
+						<a href="" class="btn btn-danger">按钮（a）</a>
+						<span class="btn btn-primary">按钮（span）</span>
+					</div>
+			</div>
+			<div class="row">
+					<h2>控制按钮组的大小</h2>
+				<div class="btn-group btn-group-justified btn-group-lg">
+						<p class="btn btn-default">按钮（p）</p>
+						<li class="btn btn-info"> 按钮(li)</li>
+						<a href="" class="btn btn-danger">按钮（a）</a>
+						<span class="btn btn-primary">按钮（span）</span>
+				</div>
+				<div class="btn-group btn-group-justified btn-group-sm">
+						<p class="btn btn-default">按钮（p）</p>
+						<li class="btn btn-info"> 按钮(li)</li>
+						<a href="" class="btn btn-danger">按钮（a）</a>
+						<span class="btn btn-primary">按钮（span）</span>
+				</div>
+				<div class="btn-group btn-group-justified btn-group-xs">
+						<p class="btn btn-default">按钮（p）</p>
+						<li class="btn btn-info"> 按钮(li)</li>
+						<a href="" class="btn btn-danger">按钮（a）</a>
+						<span class="btn btn-primary">按钮（span）</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
