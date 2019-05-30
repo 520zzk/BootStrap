@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/jquery-3.4.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>警告框</h2>
+						<div class="alert alert-danger">
+							<button type="button" class="close" data-dismiss="alert"> x</button>
+							<srtont>警告框标题</srtont>
+							点击可多了开房间来看看妇女客服拉上
+							飞机浪费了理发卡浪费空间的事了开发开放
+							 付款放得开分类贷款付款付款
+						</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<h2>用户警告行为js</h2>
+					<div class="alert alert-info  fade in ">
+						<button class="close" id="001"> X</button>
+						<strong>警告框标题</strong>
+						xxxxxxxkkxkxkxkxkxkxkxkxxkxkxkxkxk
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<h2>用户警告行为js+modal</h2>
+					<div class="alert alert-info  fade in " id="002">
+						<button class="close"  data-dismiss="alert"> X</button>
+						<strong>警告框标题</strong>
+						xxxxxxxkkxkxkxkxkxkxkxkxxkxkxkxkxk
+					</div>
+					<div class="modal" id="mymodal">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h4>提示</h4>
+								</div>
+								<div class="modal-body">
+									<p>确认关闭</p>
+								</div>
+								<div class="modal-footer">
+									<botton class="btn btn-info " data-dismiss="modal">确认</botton>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$('#001').click(function(){
+					$(this).alert('close');
+				})
+				
+				$("#002").on("close.bs.alert",function(e){
+					$("#mymodal").modal();
+				})
+				
+			})
+		</script>
+	</body>
+</html>

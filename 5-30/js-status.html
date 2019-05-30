@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/jquery-3.4.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>设置加载状态</h2>
+					<p>通过按钮可以设置加载loading状态</p>
+					<!--
+						data-loading-text: 设置加载文本
+						data-reset-text    设置重置文本
+						data-complete-text 设置完成文本
+					-->
+					<button class="btn btn-primary btn-block btn-lg" data-loading-text="正在加载...">
+						加载
+					</button>
+				</div>
+			
+			</div>
+			
+	
+			
+		</div>
+		<script type="text/javascript">
+			$(function(){
+			$('.btn').click(function(){
+				$(this).button('loading');
+			})
+			
+				
+			})
+		</script>
+	</body>
+</html>
