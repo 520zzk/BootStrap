@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栅格系统</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <style type="text/css">
+      div[class*="col-"]{
+          background: #999;
+          min-height:60px;
+          border:1px solid red;
+      }
+      .tips1{
+          width:60px;
+          height:200px;
+          background: #000;
+          right:0;
+          top:0;
+      }
+      .tips2{
+          width:60px;
+          height:100px;
+          background: pink;
+          top:0;
+          right:0;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                        col-md-8
+                </div>   
+                <!-- visible-?-block 显示，在什么条件下显示 -->
+                <div class="col-md-4 visible-lg-block">
+                        visible-md-block
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    9999
+                </div>
+                <!-- hidden-? 在什么条件下隐藏 -->
+                <div class="col-md-3 hidden-sm">
+                    3333
+                </div>
+            </div>
+            
+    
+    </div>
+    <div class="container-fluid">
+       <div class="row">
+           <!-- 浮动定位，在什么情况下显示和隐藏，缺点，会占位置-->
+            <!-- <div class="tips1 pull-left visible-lg-block"></div>
+            <div class="tips2 pull-left hidden-lg"></div> -->
+       </div>
+       <div class="row">
+           <!-- 固定定位，-->
+            <div class="tips1 affix visible-lg-block"></div>
+            <div class="tips2 affix hidden-lg"></div>
+       </div>
+       <div class="row">
+           <div class="visible-print-block">打印时出现</div>
+           <div class="hidden-print">非打印状态</div>
+       </div>
+    </div>
+    <br>
+    
+    
+</body>
+</html>

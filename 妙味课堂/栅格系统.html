@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栅格系统</title>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <style type="text/css">
+      div[class*="col-"]{
+          background: #999;
+          min-height:60px;
+          border:1px solid red;
+      }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
+        <!-- 偏移量 
+        offset 只能从左边开始
+        -->
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2"></div>
+        </div>
+        <!-- push左边偏移 pull右边偏移 -->
+        <div class="row">
+            <div class="col-md-4 col-md-push-8">1</div>
+            <div class="col-md-4 col-md-pull-1">2</div>
+        </div>
+    </div>
+    
+</body>
+</html>
