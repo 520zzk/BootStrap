@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.4.0.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <title>nav</title>
+    <style>
+    .tab-content{
+        border:1px #ddd solid;
+        border-top:0;
+        border-radius: 0 0 5px 5px ;
+        padding:20px;
+    }
+    </style>
+</head>
+<body style="height:1000px;">
+    <div class="container">
+        <div class="row">
+            <h5>一般</h5>
+           <ul class="nav nav-tabs">
+               <li class="active"><a href="#a" data-toggle="tab">one</a></li>
+               <li><a href="#b" data-toggle="tab">two</a></li>
+               <li><a href="#c" data-toggle="tab">three</a></li>
+           </ul>
+           <!-- 作为内容的 -->
+           <ul class="tab-content">
+                <li id="a" class="tab-pane  active">111111111111111111111</li>
+                <li id="b" class="tab-pane">222222222222222222222</li>
+                <li id="c" class="tab-pane">333333333333333333333</li>
+           </ul>
+        </div>
+        <div class="row">
+            <h5>限定宽度的</h5>
+            <div style="width:500px">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#aa" data-toggle="tab">one</a></li>
+                    <li><a href="#bb" data-toggle="tab">two</a></li>
+                    <li><a href="#cc" data-toggle="tab">three</a></li>
+                </ul>
+                <ul class="tab-content">
+                     <li id="aa" class="tab-pane fade in active">111111111111111111111</li>
+                     <li id="bb" class="tab-pane fade">222222222222222222222</li>
+                     <li id="cc" class="tab-pane fade">333333333333333333333</li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="row">
+            <h5>鼠标移入</h5>
+            <div style="width:500px">
+                <ul class="nav nav-tabs" id="my-tabs">
+                    <li class="active"><a href="#aaa" data-toggle="tab">one</a></li>
+                    <li><a href="#bbb" data-toggle="tab">two</a></li>
+                    <li><a href="#ccc" data-toggle="tab">three</a></li>
+                </ul>
+                <ul class="tab-content">
+                     <li id="aaa" class="tab-pane fade in active">111111111111111111111</li>
+                     <li id="bbb" class="tab-pane fade">222222222222222222222</li>
+                     <li id="ccc" class="tab-pane fade">333333333333333333333</li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</body>
+<script>
+$('#my-tabs a').mouseover(function(){
+   $(this).tab('show');
+});
+</script>
+</html>

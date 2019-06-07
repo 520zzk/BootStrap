@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下拉菜单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="../bootstrap-3.3.7-dist/js/jquery-3.4.0.js"></script>
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <style>
+        .my-button-style{
+            width:100px;height:50px;color:#9c9c9c;border:none;
+        }
+        .dropdown-menu span{
+            display: inline-block;
+            margin-left:5px;
+        }
+        .my-animation{
+            animation:0.3s linear fadeIn;
+        }
+        @keyframes fadeIn{
+            0%{opacity:0;transform:translateY(-20px)}
+            100%{opacity:1;transform:translateY(0px)}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="dropdown">
+                    <button class="btn btn-default my-button-style" data-toggle="dropdown">Dropdown <span class="caret"></span> </button>
+                    <ul class="dropdown-menu my-animation">
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><span>envelope</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-film"></span><span>film</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-camera"></span><span>camera</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-picture"></span><span>picture</span></a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    
+</body>
+<script>
+    //移动端没有over
+    // console.log(window.navigator.userAgent.toLowerCase().indexOf("mobile"));
+if(window.navigator.userAgent.toLowerCase().indexOf("mobile")==-1){
+    $(".my-button-style").on('mouseover',function(){
+    console.log('x')
+    })
+}
+
+</script>
+</html>
